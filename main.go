@@ -60,8 +60,8 @@ func main() {
 }
 
 func parsePacket(packet gopacket.Packet) {
-	fmt.Println("Raw Data (Hex):")
-	fmt.Printf("%x\n", packet.Data())
+	fmt.Println("Raw Data (byte):")
+	fmt.Println(packet.Data())
 
 	// Decode Ethernet layer
 	if ethernetLayer := packet.Layer(layers.LayerTypeEthernet); ethernetLayer != nil {
