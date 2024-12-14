@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Packet Tracing Started...")
+	fmt.Println("Packet Tracing Started..")
 
 	devices, err := pcap.FindAllDevs()
 
